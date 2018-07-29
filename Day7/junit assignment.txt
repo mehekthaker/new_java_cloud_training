@@ -1,0 +1,23 @@
+Problem Statement:
+
+Develop a simple java application to calculate the tax for an employee based on his salary.
+
+Develop a  class  named “TaxCalculator“ with a method named calculateTax with the following method parameters, are empName , isIndian, empSal. This method should return taxAmount.
+
+The business logic for calculating the tax is as follows, this has to be implemented inside the method, If the employee is not a Indian. 
+
+The calculator should throw a CountryNotValidException If the employee name is null or empty. 
+
+The calculator should throw a EmployeeNameInvalidException If  empSal is greater than one lakh and isIndian true taxAmount =empSal *8/100 Otherwise  If  empSal  is between 50K and 1lakh and isIndian true taxAmount =empSal *6/100 Otherwise  If  empSal  is between 30 and 50 Thousand  and isIndian true taxAmount =empSal *5/100  Otherwise  If  empSal  is between 10 and 30 Thousand  and isIndian true  taxAmount =empSal *4/100 Otherwise The calculator should throw a TaxNotEligibleException. 
+
+
+The following test cases to be executed, change the data in main method and run it and verify the output messages
+
+Test Cases	Employee Name	Employee Salary	Is Indian	Message Expected
+Test Case 1	Ron		34000		False		The employee should be an Indian citizen for calculating tax.
+
+Test Case 2	Tim		1000		True		The employee does not need to pay tax
+Test Case 3	Jack		55000		True	Tax amount is 3300
+Test Case 4			30000		True	The employee name cannot be empty
+
+
